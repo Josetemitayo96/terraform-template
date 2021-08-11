@@ -1,0 +1,51 @@
+This Terrraform template is used to provison the following co 
+
+AWS EFS that is used by all the component in this template
+A sftp server (EC2) instance that is deployed on a publicsubnet
+    The sftp server is publicly accessible on port 220
+    The sftp server is only open to internal ips on port 1220
+    AWS EFS is mounted on the sftp server
+
+AWS RDS
+    A Securitygroup for the RDS
+
+AWS Fargate service
+    A task definition
+    Role for task execution
+    ECS cluster
+    ECS fargate
+    The service is deployed in private subnet
+    Security group
+    ALB and TG are attached to the service
+    Autoscaling policy is attached to the ECS service
+
+Launch confuiguration
+SQS
+
+
+
+
+Resources
+. VPC
+. Two public subnets and private subnets per AZ 
+. Routing tables for the subnets
+. NAT gateways with attached Elastic IPs for the private subnet
+. Security groups
+. An ALB with target group listening on port 4443 and 80
+. ECS cluster 
+. RDS
+. efs
+. Autoscaling group
+. ALB and Target group
+. EC2
+. AWS SQS
+
+
+To deploy to Production environment using Production credentials use this command
+terraform apply  -var-file=".\Production\prod.tfvars" -state=".\Production\prod.state
+
+To deploy to Staging environment using staging credentials use this command
+terraform apply  -var-file=".\staging\stg.tfvars" -state=".\staging\stg.state
+
+To deploy to development environment using development credentials use this command
+terraform apply  -var-file=".\development\dev.tfvars" -state=".\development\dev.state"
