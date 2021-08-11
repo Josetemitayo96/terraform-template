@@ -1,4 +1,4 @@
-This Terrraform template is used to provison the following co 
+This is a Terrraform template is used to provison the following co 
 
 AWS EFS that is used by all the component in this template
 A sftp server (EC2) instance that is deployed on a publicsubnet
