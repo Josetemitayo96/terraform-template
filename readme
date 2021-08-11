@@ -19,7 +19,9 @@ AWS Fargate service
     ALB and TG are attached to the service
     Autoscaling policy is attached to the ECS service
 
-Launch confuiguration
+AWS Launch configuration
+AWS autoscaling group
+IAM Role to consume SQS messages
 SQS
 
 
