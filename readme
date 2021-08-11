@@ -1,4 +1,4 @@
-This Terrraform template is used to provison the following co 
+This is a Terrraform template is used to provison the following co 
 
 AWS EFS that is used by all the component in this template
 A sftp server (EC2) instance that is deployed on a publicsubnet
@@ -19,7 +19,9 @@ AWS Fargate service
     ALB and TG are attached to the service
     Autoscaling policy is attached to the ECS service
 
-Launch confuiguration
+AWS Launch configuration
+AWS autoscaling group
+IAM Role to consume SQS messages
 SQS
 
 
