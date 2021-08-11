@@ -134,6 +134,6 @@ resource "aws_iam_role" "consumer_role" {
 
 
 resource "aws_iam_instance_profile" "sqs_profile" {
-  name  = "sqs_profile"
+  name = "sqs_profile"
   role = aws_iam_role.consumer_role.name
 }

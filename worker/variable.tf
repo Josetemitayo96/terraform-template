@@ -30,5 +30,5 @@ variable "efs_id" {
 
 
 variable "queue_arn" {
-  
+
 }

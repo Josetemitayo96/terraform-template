@@ -38,5 +38,5 @@ variable "lb_enable_http2" {
 }
 
 variable "certificate_arn" {
-   description = "The ARN of the certificate that the ALB uses for https"
+  description = "The ARN of the certificate that the ALB uses for https"
 }

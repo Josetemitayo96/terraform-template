@@ -71,7 +71,7 @@ module "alb" {
   lb_enable_cross_zone_load_balancing = var.lb_enable_cross_zone_load_balancing
   lb_enable_deletion_protection       = var.lb_enable_deletion_protection
   lb_internal                         = var.lb_internal
-  certificate_arn = var.certificate_arn
+  certificate_arn                     = var.certificate_arn
 
 }
 
@@ -122,7 +122,7 @@ module "worker" {
   DevopsTestSubnetPrivate = module.vpc.private_subnets
   vpc_id                  = module.vpc.id
   efs_id                  = module.efs.efs_id
-  queue_arn = module.sqs.queue_arn
+  queue_arn               = module.sqs.queue_arn
 
 }
 

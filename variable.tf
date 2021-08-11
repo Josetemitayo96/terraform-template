@@ -152,7 +152,7 @@ variable "lb_name" {
 }
 
 variable "certificate_arn" {
-   description = "The ARN of the certificate that the ALB uses for https"
+  description = "The ARN of the certificate that the ALB uses for https"
 }
 
 ############### ecs
